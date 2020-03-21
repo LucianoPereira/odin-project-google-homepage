@@ -1,0 +1,165 @@
+ <!DOCTYPE html>
+ <style>
+ 	body {
+ 		width: 100%;
+ 	}
+
+ 	.main-content {
+ 		display: flex;
+ 		align-items: center;
+ 		flex-direction: column;
+ 		justify-content: center;
+
+ 	}
+ 	.item {
+ 		display: block;
+ 		padding: 10px;
+ 	}
+ 	.button {
+ 		background-image: linear-gradient(top,#f5f5f5,#f1f1f1);
+ 		background-color: #f2f2f2;
+ 		border: 1px solid #f2f2f2;
+ 		border-radius: 4px;
+ 		color: #5F6368;
+ 		font-family: arial,sans-serif;
+ 		font-size: 14px;
+ 		margin: 11px 4px;
+ 		padding: 0 16px;
+ 		line-height: 27px;
+ 		height: 36px;
+ 		min-width: 54px;
+ 		text-align: center;
+ 		cursor: pointer;
+ 		user-select: none;
+ 		font-size: 16.8px !important;
+ 	}
+ 	footer {
+ 		font-size: 10pt;
+ 		height: 40px;
+ 		width: 100%;
+ 		clear: both;
+ 		position:absolute;
+ 		bottom: 40px;
+ 	}
+ 	.fbar {
+ 		background: #f2f2f2;
+ 		line-height: 32px;
+ 		min-width: 980px;
+ 		border-top: 1px solid #e4e4e4;
+ 		display: flex;
+ 		justify-content: space-between;
+ 		margin-bottom: 0;
+
+ 	}
+ 	element {
+ 		font-size: 16px !important;
+ 		margin-left: 10px;
+ 	}
+ 	nav {
+ 		display: flex;
+ 		justify-content: flex-end;
+ 	}
+ 	.nav-element {
+ 		white-space: nowrap;
+ 		text-align: right;
+ 		font-family: arial,sans-serif; 
+ 		display: inline-block;
+ 		outline: none;
+ 		vertical-align: middle;
+ 		color: rgba(0,0,0,0.87);
+ 		text-decoration: none;
+ 		font-size: 15.6px !important;
+ 		margin-right: 20px;
+
+ 	}
+ 	.options-img {
+ 		background-position: -132px -38px;
+ 		opacity: .55;
+ 		color: #000;
+ 		cursor: pointer;
+ 		text-decoration: none;
+ 		background-size: 528px 68px;
+ 		box-sizing: border-box;
+ 		height: 30px;
+ 		width: 30px;
+ 		border-radius: 2px;
+ 		vertical-align: middle;
+ 	}
+ 	#sign-in {
+ 		color: #fff;
+ 		border: 1px solid #4285f4;
+ 		font-weight: bold;
+ 		outline: none;
+ 		background: -moz-linear-gradient(top,#4387fd,#4683ea);
+ 		padding: 0 12px;
+ 	}
+ 	
+ 	#search-bar {
+ 		background: #fff;
+ 		display: flex;
+ 		border: 1px solid #dfe1e5;
+ 		box-shadow: none;
+ 		border-radius: 24px;
+ 		z-index: 3;
+ 		height: 44px;
+ 		margin: 0 auto;
+ 		color: #222;
+ 		width: 482px;
+ 		flex: 1;
+ 		padding: 5px 8px 0 16px;
+ 		padding-left: 16px;
+ 		padding-left: 14px;
+ 	}
+ }
+</style>
+<html>
+<head>
+</head>
+<body>
+	<nav>
+		<div class="nav-element">
+			<element>Gmail</element>
+			<element>Images</element>
+			<img class="options-img" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png">
+			<label for="sign-in">
+				<input class="button" type="button" id="sign-in" value="Sign-In">
+			</label>
+		</div>
+	</nav>
+	<div class="main-content">
+		<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+		<div class="item">
+			<label for="search-bar">
+				<input type="text" id="search-bar">
+			</label>
+		</div>
+		<div>
+			<label for="Google Search">
+				<button class="icon"><i class="glyphicon glyphicon-search"></i>	</button>					
+				<input type="button" id="Google Search" value="Google Search">
+			</label>
+			<label for="I'm Feeling Lucky">
+				<input type="button" id="I'm Feelling Lucky" value="I'm Feeling Lucky">
+			</label>
+		</div>
+	</div>
+	<footer>
+		<div class="fbar">
+			<element>Argentina</element>
+		</div>
+		<div class="fbar">
+			<div>
+				<element>Advertising</element>
+				<element>Business</element>
+				<element>About</element>
+				<element>How Search Works</element>
+			</div>
+			<div>
+				<element>Privacy</element>
+				<element>Terms</element>
+				<element>Settings</element>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
